@@ -33,7 +33,7 @@ public class AccountController {
             .id(record.id)
             .ownerId(record.ownerId)
             .name(record.name)
-            .info("account info")
+            .info("account infos")
             .build();
     }
 }
