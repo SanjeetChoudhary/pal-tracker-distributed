@@ -1,4 +1,4 @@
-package io.pivotal.pal.tracker.registration;
+package io.pivotal.pal.tracker.allocations;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
