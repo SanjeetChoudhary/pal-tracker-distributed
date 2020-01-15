@@ -3,12 +3,12 @@ applications:
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   routes:
   - route: timesheets-pal-sanjeetchoudhary.cfapps.io
-  memory: 256m
+  memory: 1G
   instances: 1
   env:
    # REGISTRATION_SERVER_ENDPOINT: https://registration-pal-sanjeetchoudhary.cfapps.io/
     JAVA_OPTS: '-XX:ReservedCodeCacheSize=32M -XX:MaxDirectMemorySize=32M'
-    JBP_CONFIG_OPEN_JDK_JRE: '[memory_calculator: {stack_threads: 30}, jre: {version: 11.+}]'
+    #JBP_CONFIG_OPEN_JDK_JRE: '[memory_calculator: {stack_threads: 30}, jre: {version: 11.+}]'
   services:
   - tracker-timesheets-database
   - tracker-service-registry
